@@ -26,7 +26,7 @@ pub fn Header() -> impl IntoView {
             <nav class="links">
                 <a href="mailto:mariojrivas@outlook.com">"Email"</a>
                 <a href="https://github.com/RivasMario" target="_blank">"GitHub"</a>
-                <a href="https://www.linkedin.com/in/" target="_blank">"LinkedIn"</a>
+                <a href="https://www.linkedin.com/in/mariojosephrivas/" target="_blank">"LinkedIn"</a>
             </nav>
 
             <Skyline/>
