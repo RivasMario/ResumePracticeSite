@@ -1,0 +1,6 @@
+# Rust build output (huge, regenerated every build)
+/target
+# trunk's bundled website output
+/dist
+# Cargo's resolved dependency lockfile is usually committed for apps,
+# but keep it for reproducible builds — leaving it tracked is fine.

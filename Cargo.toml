@@ -1,0 +1,23 @@
+[package]
+name = "resume_site"
+version = "0.1.0"
+edition = "2021"
+
+# Dependencies = external Rust crates (packages) pulled from crates.io.
+[dependencies]
+# Leptos = the web UI framework. "csr" feature = Client-Side Rendering:
+# the whole app compiles to WASM and runs in the browser, no server needed.
+leptos = { version = "0.8", features = ["csr"] }
+# Makes Rust panics show a readable message + stack trace in the browser console.
+# Without it, a crash just prints "unreachable executed" — useless for debugging.
+console_error_panic_hook = "0.1"
+# Browser fetch API wrapper — used to call the GitHub API from WASM.
+gloo-net = "0.6"
+# serde = serialize/deserialize. Turns GitHub's JSON into Rust structs.
+serde = { version = "1", features = ["derive"] }
+
+# Release profile = how `trunk build --release` optimizes the final WASM.
+[profile.release]
+opt-level = "z"   # optimize for small size (z = smallest). WASM size = download time.
+lto = true        # link-time optimization: smaller + faster binary.
+codegen-units = 1 # compile as one unit = better optimization, slower build.
