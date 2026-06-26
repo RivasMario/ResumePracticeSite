@@ -12,10 +12,11 @@ pub fn App() -> impl IntoView {
 
             <Section title="Summary">
                 <p>
-                    "Cloud Support Engineer and Site Reliability practitioner with 7+ years "
-                    "keeping Azure government-cloud infrastructure at 99.99% uptime. "
-                    "Background spanning IAM microservices, CI/CD automation, and Navy "
-                    "intelligence analysis. Based in the Pacific Northwest."
+                    "Cloud / SRE engineer with 9+ years sustaining Azure Government "
+                    "infrastructure at 99.99% uptime. Active TS/SCI. Depth in IAM "
+                    "microservices, CI/CD automation, and Infrastructure as Code across "
+                    "air-gapped government clouds; prior Navy intelligence analyst. "
+                    "Based in the Pacific Northwest."
                 </p>
             </Section>
 
@@ -25,12 +26,12 @@ pub fn App() -> impl IntoView {
                     company="ASM Research (Microsoft Vendor)"
                     dates="Dec 2018 \u{2014} Present"
                     bullets=vec![
-                        "Ensured 99.99% uptime of Azure cloud infrastructure across 4+ government clouds.",
-                        "Contributed 100+ PRs to the MSODS org repo (scripts, deploy configs, ARM Ev2) through code review, merge, and test pipelines.",
-                        "Automated deployments with Azure DevOps CI/CD and IaC; built VSRM pipelines to ship patches, microservice versions, and tool configs to Gov Clouds in ring deployments.",
-                        "Managed Azure IAM microservices: Service Fabric replicas (baremetal), AKS, and Cosmos instances at 99.99% uptime.",
-                        "Built logging/monitoring with Kusto and Geneva to proactively catch and prevent service outages.",
-                        "Configured WDS and SCCM/MECM for Windows Server deployment, patching, and imaging across hundreds of servers.",
+                        "Sustained 99.99% uptime across 4+ Azure Government clouds supporting critical federal operations.",
+                        "Shipped 100+ pull requests to the MSODS org repo (deployment scripts, ARM Ev2 configs) through code review, merge, and automated test pipelines.",
+                        "Built VSRM ring-deployment pipelines in Azure DevOps to roll patches, microservice versions, and tool configs across Gov Clouds, reducing release risk via staged rings.",
+                        "Operated Azure IAM microservices \u{2014} Service Fabric replicas (bare metal), AKS, and Cosmos DB \u{2014} at 99.99% availability for government tenants.",
+                        "Instrumented logging and monitoring in Kusto and Geneva to detect and pre-empt outages before customer impact.",
+                        "Imaged and patched hundreds of Windows Servers via WDS and SCCM/MECM with federally mandated cipher suites.",
                     ]
                 />
                 <ExperienceItem
@@ -38,21 +39,21 @@ pub fn App() -> impl IntoView {
                     company="Avanade (Microsoft Vendor)"
                     dates="Aug 2017 \u{2014} Dec 2018"
                     bullets=vec![
-                        "Deployed Kubernetes v1.21 clusters on Linux via Azure IaaS, cutting infra cost 25%; Ansible v2.10 added 15% management savings.",
-                        "Led DevSecOps integration with an IaC toolchain (key rotations, config management), improving reliability/uptime 20%.",
-                        "Applied Azure Key Vault, NSG rules, RBAC, and IAM to address 250+ client security challenges annually.",
-                        "Built a custom CI/CD pipeline for file management, Docker builds, and Container Registry updates, cutting manual work 30%.",
-                        "Engineered resilient cloud networks (VMs, VMSS, VNETs, load balancers) with auto-scaling and internal file sharing.",
+                        "Deployed Kubernetes v1.21 clusters on Azure IaaS (Linux), cutting infrastructure cost 25%; automated provisioning with Ansible v2.10 for +15% management savings.",
+                        "Led DevSecOps adoption (IaC, key rotation, config management), improving system reliability and uptime 20%.",
+                        "Hardened access with Azure Key Vault, NSG rules, RBAC, and IAM, resolving 250+ client security requirements annually.",
+                        "Built a custom CI/CD pipeline (file management, Docker builds, Container Registry) that cut manual intervention 30% and release time 25%.",
+                        "Engineered resilient cloud networks (VMs, VMSS, VNETs, load balancers) with auto-scaling.",
                     ]
                 />
                 <ExperienceItem
                     role="Intelligence Specialist / Expeditionary Warfare Analyst"
-                    company="US Navy / US Navy Reserves"
-                    dates="2018 \u{2014} 2024"
+                    company="US Navy Reserves"
+                    dates="2018 \u{2014} 2024 (Reserve)"
                     bullets=vec![
-                        "Served in the Pacific at Combined Naval Forces Korea and Naval Special Warfare Group 2 as maritime, special forces, and counterintelligence analyst.",
-                        "Analyzed drone Full Motion Video (FMV) and Geospatial Imagery (GEOINT) using Google Earth and ArcGIS.",
-                        "Delivered daily Red Force and maritime briefs to senior leadership and pre-mission briefs to Special Boat Team commanders.",
+                        "Served as maritime, special-forces, and counterintelligence analyst at Combined Naval Forces Korea and Naval Special Warfare Group 2 (Pacific theater).",
+                        "Exploited drone Full Motion Video (FMV) and GEOINT in Google Earth and ArcGIS to produce threat assessments.",
+                        "Briefed daily Red Force and maritime intelligence to the US Korea J2 and delivered pre-mission briefs to Special Boat Team commanders.",
                     ]
                 />
                 <ExperienceItem
@@ -60,8 +61,8 @@ pub fn App() -> impl IntoView {
                     company="Leidos (Microsoft Vendor)"
                     dates="Feb 2017 \u{2014} Aug 2017"
                     bullets=vec![
-                        "Managed network infrastructure for 1000 users (Domain Controllers, Exchange, Active Directory), driving 98% user satisfaction.",
-                        "Handled 120+ tickets monthly; gained PKI exposure managing digital certificates.",
+                        "Administered infrastructure for 1,000 users (Domain Controllers, Exchange, Active Directory), sustaining 98% satisfaction.",
+                        "Resolved 120+ tickets monthly; managed PKI digital certificates.",
                     ]
                 />
                 <ExperienceItem
@@ -69,7 +70,7 @@ pub fn App() -> impl IntoView {
                     company="Microsoft"
                     dates="Aug 2016 \u{2014} Feb 2017"
                     bullets=vec![
-                        "Ran a compliance-tool assessment for the Windows Devices group, uncovering 50% potential savings and advocating an external vendor solution.",
+                        "Assessed compliance tooling for the Windows Devices group, identifying 50% potential savings and driving adoption of an external vendor solution.",
                     ]
                 />
             </Section>
@@ -80,16 +81,16 @@ pub fn App() -> impl IntoView {
                     company="Personal"
                     dates=""
                     bullets=vec![
-                        "Built a Proxmox homelab with Azure Entra ID integration via an OAuth2 proxy on Ubuntu for centralized auth and access control.",
+                        "Entra ID SSO via an OAuth2 proxy on Ubuntu for centralized authentication and access control.",
                     ]
                 />
                 <ExperienceItem
-                    role="PowerShell Automation Tooling"
+                    role="PowerShell Automation"
                     company="Personal"
                     dates=""
                     bullets=vec![
-                        "Built two PowerShell tools with UIs: cut replica server OS migration from 6h to 4h (33%) and reduced user error 35%.",
-                        "Wrote a cloud-agnostic script to scan baremetal servers, chassis managers, and VM inventories for accurate service deconfliction.",
+                        "Two GUI tools: cut replica-server OS migration 6h\u{2192}4h (33%) and user error 35%.",
+                        "Cloud-agnostic scanner (bare metal, chassis managers, VM inventories) for accurate service deconfliction.",
                     ]
                 />
             </Section>
@@ -110,9 +111,11 @@ pub fn App() -> impl IntoView {
 
             <Section title="Skills">
                 <ul class="skills">
-                    {["Azure", "Kubernetes / AKS", "Service Fabric", "CI/CD (Azure DevOps)",
-                      "Infrastructure as Code", "PowerShell", "Kusto", "Geneva",
-                      "RBAC / IAM", "SCCM / MECM", "Linux", "Docker"]
+                    {["Azure (Government Cloud)", "Site Reliability / SRE", "Kubernetes / AKS",
+                      "Service Fabric", "Cosmos DB", "Azure DevOps", "CI/CD",
+                      "Infrastructure as Code (ARM/Ev2, Ansible)", "PowerShell", "Kusto (KQL)",
+                      "Geneva", "RBAC / IAM", "Entra ID", "Active Directory", "SCCM / MECM",
+                      "PKI", "Docker", "Linux", "Incident Response"]
                         .into_iter()
                         .map(|s| view! { <li>{s}</li> })
                         .collect_view()}
